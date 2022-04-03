@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical de caixas</title>
+    <style>
+        #container{
+            background-image: url(/modulo-3/imagens/target001.png);
+            background-size: 100% 100%; /*Faz com que a minha background image fique 100% 
+            dentro de onde ela for colocada, no caso no meu container */
+            position: relative;/*que é o padrão*/
+            height:96vh; /*96% (VH) da tela total do site*/
+            padding: 10px;
+            background-color: purple;
+        }
+        #conteudo{
+            background-image: url(/modulo-3/imagens/target001.png);
+            background-size: 100% 100%; /*Faz com que a minha background image fique 100% 
+            dentro de onde ela for colocada, no caso no meu conteudo */
+
+
+            position: absolute;
+            left: 50%;
+            top: 50%; /*Essas duas propriedades são relacionadas a minha position*/
+            transform: translate(-50%,-50%);/*Movendo o componente para a direita esquerda para cima e baixo*/
+            
+            width: 400px;
+            height: 200px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
