@@ -20,7 +20,39 @@ header > h1{
 header > p{
     padding-bottom: 50px;
 }
-a{
+header a, footer a{
     color: white;
-    text-decoration: none;/*Tirar o sublinhad/*Texto em negrito*/
+    text-decoration: none;/*Tirar o sublinhado*/
+    font-weight: bolder; /*Texto em negrito*/
+}
+header a:hover, footer a:hover{
+    text-decoration: underline; /*Deixar o texto sublinhado*/
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;/* Espaço entre as palavras */
+    padding-left: 30px;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(23, 22, 22, 0.697);
+    color: white;
+}
+section.imagem > p{
+    background-color: rgba(44, 44, 44, 0.719);
+    width: 400px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
