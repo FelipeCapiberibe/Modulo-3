@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sriracha&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+}
+
 * { /*configurações universais de todos os elementos*/
     margin: 0px;
     padding: 0px;
@@ -6,6 +14,7 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
     background-color: black;
@@ -16,6 +25,7 @@ header > h1{
     padding-top: 50px;
     /* text-transform: uppercase;Deixar tudo em letra maiuscula */
     font-variant: small-caps;
+    font-family: var(--fonte2);
 }
 header > p{
     padding-bottom: 50px;
@@ -25,7 +35,7 @@ header a, footer a{
     text-decoration: none;/*Tirar o sublinhado*/
     font-weight: bolder; /*Texto em negrito*/
 }
-header a:hover, footer a:hover{
+header a:hover, footer a:hover{/*a Pseudo classe :hover identifica quando o mouse está por cima de um elemento*/
     text-decoration: underline; /*Deixar o texto sublinhado*/
 }
 
@@ -34,6 +44,7 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;/* Espaço entre as palavras */
     padding-left: 30px;
+    font-size: 2.5vw;
 }
 
 section.normal{
