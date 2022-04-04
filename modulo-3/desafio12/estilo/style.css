@@ -46,6 +46,9 @@ section{
     padding-left: 30px;
     font-size: 2.5vw;
 }
+section > p{
+    padding-bottom: 2em;
+}
 
 section.normal{
     background-color: white;
@@ -55,10 +58,23 @@ section.normal{
 section.imagem{
     background-color: rgba(23, 22, 22, 0.697);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.749);
+    background-attachment: fixed; /*Efeito de deixar a foto parada, efeito paralax*/
 }
 section.imagem > p{
     background-color: rgba(44, 44, 44, 0.719);
     width: 400px;
+    text-shadow: 1px 1px 0px black;
+}
+#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
 }
 
 footer{
