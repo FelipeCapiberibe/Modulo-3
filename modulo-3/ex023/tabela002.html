@@ -30,19 +30,22 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- 
         ANATOMIA PARA TABELAS GRANDES 
-        TABLE = 
+        TABLE 
+            CAPTION (TITULO OU LEGENDA DA TABLE, no caption não podemos colocar nem tr nem td)
             THEAD;
                 TR, TD, TH
             TBODY;
                 TR, TD, TH
             TFOOT;
                 TR, TD, TH
+
+                Sempre que for um Dado é Td, sempre que for um Titulo é th.
      -->
      <table>
          <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
          </thead>
          <tbody>
@@ -65,7 +68,7 @@
          </tbody>
          <tfoot>
               <tr>
-                  <th>Total de habitantes</th>
+                  <th scope="row">Total de habitantes</th>
                   <td class="numero"><strong>64.499.723</strong></td>
               </tr>
          </tfoot>
