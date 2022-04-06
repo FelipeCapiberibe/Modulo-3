@@ -12,13 +12,19 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;/* Não muda nada visualmente apenas no quesito comportamental da minha table, ajuda na hora de fixar o cabecalho */
+        }
+        thead > tr > th{
+            position: sticky;/* sticky é grudar */
+            top: 0;
+            background-color: black;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
         }
         thead{
-            background-color: grey;
+            background-color: black;
             color:  white;
         }
         .numero{
