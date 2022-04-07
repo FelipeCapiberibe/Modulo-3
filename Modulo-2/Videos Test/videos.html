@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inseridos vídeos hospedados localmente</h1> 
+    <p>Este vódeo está hospedado no meu proprio servidor.</p>
+    <video width="500" poster="" controls loop> <!--POSTER serve para colocar uma foto de capa no vídeo-->
+        <source src="midia/meu-video.webm" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v"> <!--é o Formato mais recomendavel-->
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <p>Seu Navegador não tem compatibilidade com a reprodução de vídeos</p> 
+    </video> <!--Vídeos Hospedados usando a TAG VIDEO consomem muitos dados-->
+    <!--WIDTH é a largura do vídeo--> 
+    <!--HEIGHT é a ALtura do vídeo-->
+    <!--CONTROLS é para aparecer os botões necessarios, tipo o de dar PLAY ou PAUSE-->
+    <!--LOOP serve para quando o vídeo chegar no final ele reinicie e continue reproduzindo--> 
+    <br> <iframe width="560" height="315" src="https://www.youtube.com/embed/ltXXWhTeNQk" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+    <!--Quando pega um vídeo do Youtube por exemplo, não consome dados do servidor, está consumindo dados do youtube, Porém o youtube 
+    deixa o video disponivel para o publico --> 
+    <!--Caso vc queira deixar seu video privado basta usar o VIMEO, porém é pago-->
+</body>
+</html>

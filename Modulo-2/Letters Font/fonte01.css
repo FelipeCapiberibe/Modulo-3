@@ -1,0 +1,11 @@
+ @charset "UTF-8"; /*Regra, CHARSET UTF-8 para não ter problemas de compatibilidade
+ com caracteres especiais dentro das CSS*/
+ *{
+   font-family: 'Courier New'; /*Fonte cerifada e mono espaçada*/
+    
+ } 
+ div{
+    font-size: small; 
+    text-align: left;
+    width: 800x    px;
+ }

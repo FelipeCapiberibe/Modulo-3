@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>   
+    <style>
+        
+        mark { /*todas as tags mark no meu body sofrerão com as configurações 
+            feitas nesse bloco (escopo global), caso eu queira modificar uma por uma eu devo fazer dentro da 
+            tag mark como está feito lá em baixo*/ 
+            background-color: lime; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Príncipais formatações</h1> 
+    <h2>Negrito / Destaque</h2>
+        <p>Nessa frase temos um <b>termo em negrito</b> usando 
+    a tab B (não semântica).</p> 
+        <p>Nesta outra frase temos um <strong>termo em destaque</strong>
+     usando a tag STRONG (semântica).</p> 
+    <h1>Italico / Enfase</h1> 
+        <p>Nesta frase temos um <i>termo em italico</i> usando 
+    a tag I (Não semântica).</p> 
+        <p>Nesta outra frase temos um <em>termo em italico</em> 
+    usando a tag EM (Semântica).</p> 
+    <h1>Texto Marcado</h1> 
+        <p>Podemos criar um <mark style="background-color: lime;">Testo marcado</mark> usando <!-- quando eu abro uma tag 
+    style dentro de um parâmetro eu estou utilizando css, no caso (escopo local)--> 
+        a tag MARK. (Não Semântica).</p> <!--Mark é Tipo Marca texto--> 
+        <p>Outro Mark como exemplo <mark>Exemplo de uso de Mark no escopo global.</mark> 
+        de style.</p> 
+    <h2>Texto Grande e Texto Pequeno.</h2> 
+        <p>Estamos criando um <big>Texto Grande</big> e um <small>Texto pequeno</small>.</p> 
+    <h2>Texto Excluido!</h2>
+        <p>Podemos marcar <del>um texto como excluido</del>para indicar que ele deve ser lido, 
+                mas não considerado.</p>
+    <h2>Texto Inserido!</h2>
+        <p>Podemos marcar um <ins>texto inserido</ins> para dar uma enfase e indicar 
+                que ele foi adicionado depois.</p>
+    <h2>Texto sublinhado</h2> 
+            <p>Este texto serve de exemplo para <u>texto sublinhado</u>.</p>
+    <p>Existe tambem o sublinhado que é com a tag U (não semântica).</p>             
+    <h2>Texto sobrescrito</h2> 
+    <p>Para inserir coisas do tipo x<sup>2</sup>+3.</p> 
+    <h2>Testo subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O.</p>
+</body>
+</html>

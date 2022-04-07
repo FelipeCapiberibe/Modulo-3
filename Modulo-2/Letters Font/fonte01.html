@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title> 
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas; 
+            cm, mm, in, "px", pt, pc. A mais usada é a PX.
+
+            Medidas Relativas;
+            "em", ex, rem, vw, vh, %.  A mais usada é a EM. 
+            16px geralmente é igual a 1em 
+            */
+            
+            /*width:1px; Largura*/
+            /*height: 10px; Altura*/ 
+        }
+        h1{ 
+            /*font-family: 'Work Sans', sans-serif;
+            font-size: 3em ;
+            font-weight: bolder; Peso da fonte; alguns tipos: lighter, normal, bold, bolder; ou de 100 a 900
+            font-style: italic;*/
+           /* Propriedade Shorthand font é uma forma de simplificar o uso da font
+            Essa é a ordem para o uso da Propriedade do shorthand - font-style -> font-weight -> font-size -> font-family */
+           font: italic bolder 3em 'Work Sans', sans-serif;
+        }   
+        h2{
+            font: bold 2em 'Work Sans', sans-serif;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="fonte01.css">--> 
+    <script src="fonte01.js" defer></script>
+</head>
+<body>
+    
+    <!--Trabalhando com fontes-->
+    <h1>Noções Basicas de Anatomia</h1> 
+    <h2>Regiões Anatômicas do corpo humano</h2>
+    <div>
+        
+        <ul>
+           <li>Cabeça Regiões frontal, parietal, temporal, occipital, auricular, orbital, infraorbital, bucal, parotídea, zigomática, nasal, oral e mentual (mentoniana).
+           <li>Pescoço Triângulos ou regiões submandibular, submentual (submentoniana), carotídea, muscular, supraclavicular menor, occipital, omoclavicular, suboccipital.
+           <li>Tronco posterior	Deltoide, supraescapular, interescapular, escapular, infraescapular, vertebral, lombar, sacral (sagrada), glútea e anal.
+           <li>Tronco anterior Regiões pré-esternal, peitoral, inframamária, hipocôndriaca, epigástrica, lombar, inguinal, umbilical e púbica.
+           <li>Membro superior Infraclavicular, clavipeitoral, axilar, deltoide, escapular, braço anterior, braço posterior, antebraço anterior, antebraço posterior, cubital anterior, cubital posterior, carpal anterior, carpal posterior, palma da mão, dorso da mão
+           <li>Membro inferior Femoral, coxa anterior, coxa posterior, joelho anterior, região da perna anterior, região da perna posterior, calcânea, retromaleolar, dorso do pé, planta do pé
+        </ul>
+    </div>
+    <h2>Sistema músculo-esquelético</h2>
+    <p>Vamos analisar um sistema em particular, o sistema músculo-esquelético, que é composto de três partes: ossos,
+        articulações e músculos. A parte esquelética, que funciona principalmente para suporte, consiste em ossos dispostos em dois esqueletos:
+        Esqueleto axial: crânio, ossículos auditivos, osso hioide, costelas, coluna vertebral, esterno, sacro e cóccix
+        Esqueleto apendicular: cintura escapular, membro superior, cintura pélvica, membro inferior</p>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Models</title>
+    <style>
+        h1{ /*BOX-LEVEL*/
+            background-color: rgb(222, 196, 255);
+            height: 300px; /*ALTURA*/
+            width: 400px; /*LARGURA*/
+            /*PROPRIEDADES ANATOMICAS*/
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(128, 128, 128);
+            /*ShortHand(Simplificando o codigo acima)
+            border: 10px solid rgb(128, 128, 128); 
+            */
+
+            
+            padding-top: 20px;/*Na parte superior*/
+            padding-right: 15px; /*Direita*/
+            padding-bottom: 20px;/*Em Baixo*/
+            padding-left: 15px;/*Esquerda*/
+            /*ShortHand(Simplificando o codigo acima)
+            padding: 20px, 15px, 20px, 15px;  
+            */
+
+            margin: auto; /*Centraliza a minha Caixa*/
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            /*ShortHand(Simplificando o codigo acima)
+            margin: 10px; (como todos são 10px então colocando somente 1 ele entente que é para todos os parâmetros)  
+            */
+
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: salmon; 
+            /*ShortHand(Simplificando o codigo acima)
+            outline: 2px, dashed, salmon;  
+            */
+            
+        }
+        a{ /*INLINE-LEVEL*/
+            border-width: 10px;
+            border-style: groove;
+            border-color: red;
+            /*ShortHand(Simplificando o codigo acima)
+            border: 10px, groove, red;  
+            */
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Caixa Box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos <!--A tag A é uma ancora-->
+        de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>   
+    </a></p>
+</body>
+</html>
